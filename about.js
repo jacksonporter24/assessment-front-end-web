@@ -1,11 +1,11 @@
-console.log("hello world");
+// console.log("hello world");
 
 
 
 function handleSubmit(evt) {
+	alert("Your form has been submitted successfully.")
 	evt.preventDefault();
 	
-	alert("Your form has been submitted successfully.")
 	// console.log('form submit');
 }
 
@@ -16,12 +16,10 @@ form.addEventListener('submit', handleSubmit);
 
 
 
-// const imgComp = document.querySelector("img")
-// imgComp.onmouseoever = function() {
-// 	imgComp.style.display = 'block'
-// }
 
-// // sayHelloButton.addEventListener("mouseover", () => {
-//     sayHelloButton.style.backgroundColor = "black";
-//     sayHelloButton.style.color = "white";
-// // })
+let imgComp = document.querySelector("img")
+
+
+imgComp.addEventListener("mouseover", () => {
+	alert("You are great! (This is my final compliment.)")
+})
